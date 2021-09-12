@@ -15,6 +15,11 @@ Določene datoteke (`2019_slo_politika`, `2019_svet`, `2020_slo_politika`, `2020
 Datoteka `preprocessed_data` vsebuje predprocesirane članke podatkovne množice SentiNews.
 
 
+
+## Opis modelov LDA
+V mapi `lda_models` se nahajata dve mapi, ena za vsako obravnavano leto. V vsaki mapi se nahajajo datoteke z modeli LDA za splošne in podrobne teme. V vsaki mapi so shranjeni tudi slovarji in korpus za vsak model. Več podrobnosti je opisanih v samih datotekah z izvorno kodo, kjer uporabimo te modele.
+
+
 ## Opis datotek s kodo
 Vse datoteke s kodo odprite z Google Colaboratory.
 Podrobnosti uporabe posamezne datoteke je opisan znotraj posameznih datotek.
@@ -28,12 +33,13 @@ Ker podatkovna množica Event Registry ni javno dostopna, datoteke ni možno zag
 
 ### Modeliranje tem
 Procesirane podatke upo
-Učenje modela LDA izvedemo v datoteki `topic_modeling.ipynb`, kjer zgradimo model LDA in ga shranimo.
+Učenje modela LDA izvedemo v datoteki `topic_modeling.ipynb`, kjer zgradimo model LDA in ga shranimo. To datoteko uporabimo, če želimo naučiti nov model LDA in ga shraniti.
 
-Interpretacija modela se izvede v datoteki `topic_interpretation.ipynb`, kjer opravimo interpretacijo tem modela LDA.
+Interpretacija modela se izvede v datoteki `topic_interpretation.ipynb`, kjer opravimo interpretacijo tem modela LDA. To datoteko uporabimo, ko imamo shranjene LDA modele in jih želimo interpretirati.
 
 ### Zaznavanje sentimenta
-V datoteki `sentiment_train.ipynb` je izvorna koda za prilagajanje modela SloBERTa za nalogo zaznavanja sentimenta.
+V datoteki `sentiment_train.ipynb` je izvorna koda za prilagajanje modela SloBERTa za nalogo zaznavanja sentimenta. S to datoteko smo naučili model SloBERTa, ki ga uporabimo za zaznavanje sentimenta.
+
 V datoteki `svm_train.ipynb` je izvorna koda za učenje SVM klasifikatorja za zaznavanje sentimenta.
 
 V datoteki `sentiment_classification.ipynb` izvedemo klasifikacijo modela, v datoteki `sentiment_analysis.ipynb` pa opravimo analizo zaznavanja sentimenta.
