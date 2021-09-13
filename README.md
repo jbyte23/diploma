@@ -38,8 +38,10 @@ Učenje modela LDA izvedemo v datoteki `topic_modeling.ipynb`, kjer zgradimo mod
 Interpretacija modela se izvede v datoteki `topic_interpretation.ipynb`, kjer opravimo interpretacijo tem modela LDA. To datoteko uporabimo, ko imamo shranjene LDA modele in jih želimo interpretirati.
 
 ### Zaznavanje sentimenta
-V datoteki `sentiment_train.ipynb` je izvorna koda za prilagajanje modela SloBERTa za nalogo zaznavanja sentimenta. S to datoteko smo naučili model SloBERTa, ki ga uporabimo za zaznavanje sentimenta.
+V datoteki `sentiment_train.ipynb` je izvorna koda za prilagajanje modela SloBERTa za nalogo zaznavanja sentimenta. S to datoteko smo naučili model SloBERTa, ki ga uporabimo za zaznavanje sentimenta. Za uporabo te datoteke, je potrebno najprej shraniti še članke iz podatkovne množice SentiNews.
 
 V datoteki `svm_train.ipynb` je izvorna koda za učenje SVM klasifikatorja za zaznavanje sentimenta.
 
-V datoteki `sentiment_classification.ipynb` izvedemo klasifikacijo modela, v datoteki `sentiment_analysis.ipynb` pa opravimo analizo zaznavanja sentimenta.
+V datoteki `sentiment_classification.ipynb` izvedemo klasifikacijo modela. Ta datoteka za delovanje potrebuje besedila člankov iz Event Registry podatkovne zbirke, ki pa niso javno dostopni. Sentiment za te članke je shranjen v določenih .pkl datotekah opisane zgoraj.
+
+V datoteki `sentiment_analysis.ipynb` opravimo analizo zaznavanja sentimenta.
